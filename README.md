@@ -1,4 +1,4 @@
-<img src="https://github.com/MuammarRizal/Submission-Dicoding-Front-End-Developer-Expert-3-PWA-Testing-Optimazed/assets/111135024/e17a6239-f67e-48e4-a138-4e37d781261a" width="100%" alt="Dicoding" title="Dicoding" />
+<img src="https://www.dicoding.com/blog/wp-content/uploads/2014/12/dicoding-header-logo.png" width="100%" alt="Dicoding" title="Dicoding" />
      
 # Submission Front-end Developer Expert 3 PWA + Testing + Optimized
 ## Bukti Kelulusan (<a href="https://www.dicoding.com/certificates/QLZ9Q7L7MZ5D">Sertifikat</a>)
