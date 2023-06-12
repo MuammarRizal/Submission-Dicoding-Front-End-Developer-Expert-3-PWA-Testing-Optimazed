@@ -76,7 +76,8 @@ Total jam yang dibutuhkan untuk menyelesaikan kelas ini, mulai dari persiapan ke
     </li>
     <li>Pertahankan syarat yang ada pada submission sebelumnya. Seperti penerapan PWA, responsibilitas tampilan,  aksesibilitas pada website dan sebagainya.</li>
   </ol>
-  
+</details>
+
 ### Pada aplikasi Katalog restoran ini saya menerapkan dan telah menerapkan semua kriteria
 
     1. Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript (Using ESLint).
