@@ -3,20 +3,42 @@ const fs = require("fs");
 const path = require("path");
 
 const target = path.resolve(__dirname, "src/public/heros");
-const destination = path.resolve(__dirname, "src/public/hero-image");
+const destination = path.resolve(__dirname, "dist/heros");
 
 if (!fs.existsSync(destination)) {
   fs.mkdirSync(destination);
 }
 
 fs.readdirSync(target).forEach((image) => {
-  // mengubah ukuran gambar dengan lebar 800px, dengan prefix -large.jpg
-  sharp(`${target}/${image}`)
-    .resize(800)
-    .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-large.jpg`));
+  if (image.includes("hero-image_4")) {
+    // convert hero image lebar 1200px
+    sharp(`${target}/${image}`)
+      .resize(1200)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-1200.jpg`));
 
-  // mengubah ukuran gambar dengan lebar 480px, dengan prefix -small.jpg
-  sharp(`${target}/${image}`)
-    .resize(480)
-    .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-small.jpg`));
+    // convert hero image lebar 1000px
+    sharp(`${target}/${image}`)
+      .resize(1000)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-1000.jpg`));
+
+    // convert hero image lebar 600px
+    sharp(`${target}/${image}`)
+      .resize(600)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-600.jpg`));
+  } else {
+    // convert loading image lebar 400px
+    sharp(`${target}/${image}`)
+      .resize(400)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-400.jpg`));
+
+    // convert loading image lebar 300px
+    sharp(`${target}/${image}`)
+      .resize(300)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-300.jpg`));
+
+    // convert loading image lebar 200px
+    sharp(`${target}/${image}`)
+      .resize(200)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split(".").slice(0, -1).join(".")}-200.jpg`));
+  }
 });

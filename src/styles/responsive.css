@@ -1,6 +1,7 @@
 @media screen and (max-width: 576px) {
   .jumbotron {
     justify-content: center;
+    background-image: url("./heros/hero-image_4-600.jpg");
   }
 
   .restaurant .row {
